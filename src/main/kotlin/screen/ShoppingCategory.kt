@@ -14,11 +14,11 @@ class ShoppingCategory {
             selectedCategory = readln()
         }
         if (selectedCategory == "#") {
-            //TODO 1. 장바구니 이동
         } else {
             if(categories.contains(selectedCategory))
             {
-                //TODO 2. 카테고리 상품 목록 보여주기
+                val shoppingProductList = ShoppingProductList()
+                shoppingProductList.showProducts(selectedCategory)
             }
             else
             {
